@@ -56,5 +56,4 @@ int main() {
 	cout << "Gross Income: $" << grossIncome << "\n";
 	cout << "Tax Amount: $" << taxAmount << "\n";
 	cout << "Net Income: $" << netIncome << "\n";
-
 }
