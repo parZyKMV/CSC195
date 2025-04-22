@@ -14,7 +14,7 @@ void Tacos::Read(std::ostream& ostream, std::istream& istream) {
     istream >> tortillaInput;
     tortilla = static_cast<tortillaType>(tortillaInput);
 
-    ostream << "Precio: $";
+    ostream << "Price: $";
     istream >> price;
 
     ostream << "With onions? (1-Yes, 0-No): ";
@@ -26,7 +26,7 @@ void Tacos::Read(std::ostream& ostream, std::istream& istream) {
 
 void Tacos::Write(std::ostream& ostream) {
     ostream << "\n--- " << name << " ---\n";
-    ostream << "Carne: " << MeatToString(meat) << "\n";
+    ostream << "Meat: " << MeatToString(meat) << "\n";
     ostream << "Tortilla: " << TortillaToString(tortilla) << "\n";
     ostream << "Price: $" << price << "\n";
     ostream << "Onions: " << (withOnions ? "Yes" : "No") << "\n";
